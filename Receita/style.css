@@ -1,0 +1,29 @@
+.tit
+{
+    color: blue;
+    font-weight: bold;
+    background-color: rgb(135, 135, 135);
+    text-align: center;
+}
+#ing
+{
+text-align: center;
+font-weight: bold;
+}
+.list
+{
+text-align: center;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#sm
+{
+    text-align: center;
+    font-weight: bold;
+    color: crimson;
+}
+#button
+{
+    align-items: center;
+    background-color:chartreuse;
+    color: crimson;
+}
