@@ -39,7 +39,12 @@ img {
     #menu a {
         text-decoration: none;
         padding: 10px;
+        color: silver;
     }
+
+        #menu a:hover {
+            background-color: #555;
+        }
 
     #menu ul {
         justify-content: space-between;
@@ -113,6 +118,10 @@ section {
 }
 
 footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #a1a0a0;
     color: #fff;
     text-align: center;
@@ -120,15 +129,7 @@ footer {
     margin-top: 1rem;
 }
 
-    footer p {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 0.8rem;
-    }
 
-    footer a {
-        color: #fff;
-    }
 
 
 header {
@@ -258,7 +259,30 @@ article {
         margin-bottom: 10px;
     }
 
-footer {
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+    .redes li {
+        margin: 10px;
+    }
+
+        .redes li img {
+            width: 64px;
+            height: 64px;
+        }
+
+
+
+
+
+
+
+
+/* footer {
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -279,4 +303,4 @@ footer {
     display: inline-block;
     width: 1.8rem;
     background-color: transparent;
-}
+} */
