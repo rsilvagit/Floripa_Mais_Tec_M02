@@ -1,16 +1,282 @@
-.title
-{
-
-}
-.nav
-{
-    list-style-type: none;
+body {
     margin: 0;
-    padding: 0;
-    display: block;
-    width: 60px;
+    font-family: sans-serif;
+    background-color: #d3c8c8;
 }
-img
-{
-height: 60%;
+
+header {
+    padding: 1rem;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#title {
+    margin-top: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font: bold;
+}
+
+#into {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#menu {
+    background-color: #a1a0a0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    #menu a {
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    #menu ul {
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    #menu li {
+        margin: 0 10px;
+    }
+
+        #menu li:first-child {
+            margin-left: 0;
+        }
+
+        #menu li:last-child {
+            margin-right: 0;
+        }
+
+        #menu li a {
+            display: block;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+article {
+    padding: 1rem;
+    border: 1px solid #a1a0a0;
+    margin: 1rem;
+}
+
+    article h3 {
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    article img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    article span {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    article ul {
+        list-style-position: inside;
+    }
+
+    article ol {
+        list-style-position: inside;
+    }
+
+    article h5 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #a1a0a0;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+    footer p {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.8rem;
+    }
+
+    footer a {
+        color: #fff;
+    }
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#into {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+    #menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 800px;
+        border-top: 1px solid #908d8d;
+        border-bottom: 1px solid #908d8d;
+    }
+
+    #menu li {
+        flex-grow: 1;
+        text-align: center;
+        border-left: 1px solid #908d8d;
+        border-right: 1px solid #908d8d;
+    }
+
+        #menu li:first-child {
+            border-left: none;
+        }
+
+        #menu li:last-child {
+            border-right: none;
+        }
+
+    #menu a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+
+        #menu a:hover {
+            background-color: #f2f2f2;
+        }
+
+section {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+#rec1 h3,
+#rec2 h3,
+#rec3 h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#rec1 img,
+#rec2 img,
+#rec3 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#rec1 h5,
+#rec2 h5,
+#rec3 h5 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#rec1 ul,
+#rec2 ul,
+#rec3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#rec1 li,
+#rec2 li,
+#rec3 li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#rec1 ol,
+#rec2 ol,
+#rec3 ol {
+    padding-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+    #rec1 ol li,
+    #rec2 ol li,
+    #rec3 ol li {
+        margin-bottom: 10px;
+    }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+    footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+.redes li {
+    display: inline-block;
+    width: 1.8rem;
+    background-color: transparent;
 }
