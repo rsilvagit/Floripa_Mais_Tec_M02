@@ -9,7 +9,9 @@ function App() {
 
   const onSubmit = (data, quantidade, valor) => {
     let negociacao = new Negociacao(data, quantidade, valor);
-    setNegociacoes([...negociacoes,negociacao]);
+    negociacoes.push(negociacao)
+    setNegociacoes(negociacoes);
+    console.log(negociacoes);
   };
 
   return (
