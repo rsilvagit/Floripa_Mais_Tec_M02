@@ -1,18 +1,23 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import Formulario from './components/Formulario';
 import { Negociacao } from './models/negociacoes';
 
+
 function App() {
+  const [negociacoes, setNegociacoes] = useState([]);
+
   const onSubmit = (data, quantidade, valor) => {
     let negociacao = new Negociacao(data, quantidade, valor);
-    console.log(negociacao);
+    setNegociacoes([...negociacoes,negociacao]);
   };
+
   return (
     <>
       <div className="container">
         <h1 className="text-center mb-4">Lista de negociações</h1>
         <Formulario onSubmit = {onSubmit}/>
+        
       </div>
     </>
   )
