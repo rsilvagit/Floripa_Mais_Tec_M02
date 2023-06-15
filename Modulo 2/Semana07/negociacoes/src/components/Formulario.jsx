@@ -2,12 +2,12 @@
 import React, {useState} from 'react';
 import propTypes from 'prop-types';
 
-function Formulario(onSubmit) {
+function Formulario({onSubmit}) {
     const[data, setData] = useState('');
     const[quantidade, setQuantidade] = useState('');
     const [valor, setValor] = useState('');
     const handleSumit = (evento) => {
-        evento.preventDefault();
+        evento.preventDefault(); // preventDefault evita que a pagina seja recarregada na submissão
         onSubmit(data,quantidade,valor);
     };
     

@@ -12,7 +12,7 @@ function App() {
     <>
       <div className="container">
         <h1 className="text-center mb-4">Lista de negociações</h1>
-        <Formulario onSubmit={onSubmit}/>
+        <Formulario onSubmit = {onSubmit}/>
       </div>
     </>
   )
