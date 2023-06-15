@@ -1,0 +1,1 @@
+exemplo arrow function

@@ -1,0 +1,41 @@
+Operadores 
+
+Aritiméticos
+
+Multiplicação (*)
+Divisão (/)
+Soma (+)
+Subtração (-)
+Resto da divisão (%)
+Exponencial (**)
+
+**Concatenação de valores
+
+Operadores de Atribuição
+
+Atribuição (=)
+Atribuição de adição (+=)
+Atribuição de subtração (-=)
+Atribuição de multiplicação (*=)
+Atribuição de divisão (/=)
+Atribuição de resto (%=)
+Atribuição de expoente (**=)
+
+Operadores Relacionais
+
+Menor que (<)
+Maior que (>)
+Menor ou igual a (<=)
+Maior ou igual a (>=)
+Igual a (==)
+Diferente de (!=)
+Estritos - Compara valores e tipos
+Estritamente igual a (===)
+Estritamente diferente de (!==)
+
+Operadores Lógicos
+
+E / AND (&&)
+OU / OR (||)
+NOT (!)
+

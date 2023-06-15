@@ -1,0 +1,3 @@
+// Exemplo de Tipo de dados
+// Introdução a DOM
+// Obtenção de elementos por // document.GetById(''); document.QuerySelector('#')
