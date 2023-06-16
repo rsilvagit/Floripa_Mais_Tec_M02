@@ -14,13 +14,13 @@ function listaNegociacoes({ negociacoes }) {
             </thead>
             <tbody>
                 {
-                    negociacoes.map(n => {
+                    negociacoes.map(n => (
                         <tr>
                             <td>{n.data}</td>
                             <td>{n.quantidade}</td>
                             <td>{n.valor}</td>
                         </tr>
-                    })
+                    ))
                 }
             </tbody>
         </table>

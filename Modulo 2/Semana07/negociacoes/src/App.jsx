@@ -1,7 +1,8 @@
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Formulario from './components/Formulario';
 import { Negociacao } from './models/negociacoes';
+import ListaNegociacoes from './components/ListaNegociacoes';
 
 
 function App() {
@@ -9,20 +10,17 @@ function App() {
 
   const onSubmit = (data, quantidade, valor) => {
     let negociacao = new Negociacao(data, quantidade, valor);
-    negociacoes.push(negociacao)
-    setNegociacoes(negociacoes);
-    console.log(negociacoes);
+    setNegociacoes([...negociacoes, negociacao]);
   };
-
+  
+useEffect(() => console.log(negociacoes),[negociacoes]);
   return (
-    <>
       <div className="container">
         <h1 className="text-center mb-4">Lista de negociações</h1>
-        <Formulario onSubmit = {onSubmit}/>
-        
+        <Formulario onSubmit={onSubmit} />
+        <h2>Lista negociações</h2>
+        <ListaNegociacoes negociacoes={negociacoes} />
       </div>
-    </>
-  )
+  );
 }
-
 export default App
