@@ -18,7 +18,7 @@ useEffect(() => console.log(negociacoes),[negociacoes]);
       <div className="container">
         <h1 className="text-center mb-4">Lista de negociações</h1>
         <Formulario onSubmit={onSubmit} />
-        <h2>Lista negociações</h2>
+        <h2 className="text-center mb-4">Lista negociações</h2>
         <ListaNegociacoes negociacoes={negociacoes} />
       </div>
   );
