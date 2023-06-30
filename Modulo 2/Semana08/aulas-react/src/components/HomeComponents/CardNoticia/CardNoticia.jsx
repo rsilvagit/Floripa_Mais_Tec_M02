@@ -1,6 +1,6 @@
 import './styles.css'
 
-function CardNoticia({ titulo, srcImage }) {
+export default function CardNoticia({ titulo, srcImage }) {
     return (
         <div className="card-noticia">
             <img alt={titulo} 
@@ -9,5 +9,3 @@ function CardNoticia({ titulo, srcImage }) {
         </div>
     )
 }
-
-export default CardNoticia

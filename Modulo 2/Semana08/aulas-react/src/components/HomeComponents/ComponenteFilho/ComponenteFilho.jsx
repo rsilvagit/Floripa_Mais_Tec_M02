@@ -1,4 +1,4 @@
-function ComponenteFilho({ callback }) {
+export default function ComponenteFilho({ callback }) {
 
     const handleClick = () => {
         callback('Mensagem do componente filho.')      
@@ -10,5 +10,3 @@ function ComponenteFilho({ callback }) {
         </>
     )
 }
-
-export default ComponenteFilho

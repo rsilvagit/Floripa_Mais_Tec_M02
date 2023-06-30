@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './styles.css'
 import { useNavigate } from 'react-router-dom';
+
 
 
 export default function Login() {
@@ -8,6 +9,9 @@ export default function Login() {
     const [password, setPassword] = useState();
     const [errorForm, setErrorForm] = useState(false);
     const navigate = useNavigate();
+    useEffect(() => {
+        setErrorForm(false)
+    }, [password])
 
     const handlePasswordChange = (event) => {
         setPassword(event.target.value)

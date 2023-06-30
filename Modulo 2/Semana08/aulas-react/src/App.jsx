@@ -9,6 +9,7 @@ import Empresa from './pages/Empresa/Empresa.jsx'
 import Home from './pages/Home/Home.jsx'
 import Header from './components/Header/Header.jsx'
 import Login from './pages/login/Login'
+import Noticias from './pages/Noticias/Noticias'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='login' exact element={<Login/>}/>
           <Route path='empresa/:empresa'  element={<Empresa/>}/>
           <Route path='empresas'  element={<Empresas/>}/>
+          <Route path='noticias' element={<Noticias/>}/>
         </Routes>
       </Router>
     </div>
