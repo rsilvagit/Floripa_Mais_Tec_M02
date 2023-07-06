@@ -23,3 +23,8 @@ const nome = 'João'
 const mensagem = usuarioAutenticado && `Seja bem vindo ${nome}`
 console.log(mensagem)
 
+
+useContext
+
+adicionar no header
+ const { theme, toggleTheme } = useContext(ThemeContext)

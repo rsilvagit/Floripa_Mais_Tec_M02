@@ -14,3 +14,8 @@
   .menu-item .active {
     color: #F60074 !important;
   }
+  .menu-item{
+    cursor: pointer;
+    user-select: none;
+  }
+  /* alterar ponteiro mouse para maozinha sobre link */
