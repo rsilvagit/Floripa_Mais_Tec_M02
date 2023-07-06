@@ -1,12 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import CardNoticia from "../../components/HomeComponents/CardNoticia/CardNoticia"
 import ComponenteFilho from "../../components/HomeComponents/ComponenteFilho/ComponenteFilho"
-
+import { useEffect } from "react";
 function Home() {
     const navigate = useNavigate();
     const handleclick = () =>{
         navigate('/empresa/senai')
     }
+   
 
 
     const temNoticia = true;
