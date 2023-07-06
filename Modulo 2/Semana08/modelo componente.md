@@ -28,3 +28,9 @@ useContext
 
 adicionar no header
  const { theme, toggleTheme } = useContext(ThemeContext)
+
+adicionara no app
+
+const {theme} = useContext(ThemeContext)
+
+ <div className={theme =='light'? 'App' : 'App dark-theme'}>
